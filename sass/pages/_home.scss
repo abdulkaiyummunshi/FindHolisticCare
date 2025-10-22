@@ -1,0 +1,721 @@
+.tk_hero_area{
+    background-image: url(../images/home/hero/bg_img.png);
+    height: 891px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include border-radius(24px);
+    background-size: cover;
+    @include flex(row, center, center);
+    position: relative;
+    .overly{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(4, 29, 4, 0.75);
+        @include border-radius(24px);
+        
+    }
+    .tk_heading_area{
+       position: static;
+       z-index: 1;
+    }
+    .tk_btn_area{
+        @include flex(row, center, center);
+        gap: 16px;
+        margin-top: 28px;
+    }
+    .tk_search_box{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: $white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 36px;
+        backdrop-filter: blur(19.100000381469727px);
+        background: rgba(255, 255, 255, 0.2);
+        width: fit-content;
+        @include flex(row, center, center);
+        max-width: 218px;
+        padding: 0px 20px;
+        gap: 10px;
+        input{
+            background-color: transparent;
+            padding: 16px 0px;
+            height: 100%;
+            width: 150px;
+            outline: none;
+            font-weight: 400;
+            font-size: 18px;
+            color: $white;
+            &::placeholder{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 156%;
+                text-align: center;
+                color: $white;
+            }
+            border: none;
+
+        }
+    }
+    .tk_btn_wrapper{
+        a{
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 36px;
+            padding: 14px 23px;
+            width: 218px;
+            backdrop-filter: blur(19.100000381469727px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    .banner-search-container{
+    position: absolute;
+    bottom: -47px;
+    left: 50%;
+        @include transformX(-50%);
+    box-shadow: 0 36px 48px 0 rgba(17, 17, 17, 0.1);
+    background: $white;
+    max-width: 1250px;
+    @include border-radius(444px);
+    margin: 0 auto;
+    padding: 20px;
+    @include nesthub{
+     padding: 30px 82px 30px 40px;
+    }
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 24% 19% 19% 19% auto;
+    margin-top: 60px;
+
+  @include xl{
+    grid-template-columns: 22% 18% 18% 18% auto;
+  }
+  @include md{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include sm{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include xxs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  p{
+    text-align: left;
+    border: 1px solid #dedede;
+    border-radius: 50px;
+    padding: 14px 20px;
+    height: 56px;
+    background: #f8f8f8;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: $gray9;
+  }
+
+  .nice-select{
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    border: 1px solid #dedede;
+    padding: 14px 20px;
+    background: #f8f8f8;
+    height: 56px;
+    &::after{
+        width: 8px;
+        height: 8px;
+    }
+    .list{
+        width: 100%;
+    }
+
+    @include xs{
+      padding-left: 10px;
+    }
+
+    span{
+      color: black;
+    }
+  }
+
+  button{
+    height: 55px;
+    width: max-content;
+    
+  }
+
+}
+}
+
+/*---Service Card Start---*/
+.tk_service_card_area{
+    margin-top: 120px;
+    .tk_service_card{
+        border-radius: 12px;
+        width: 100%;
+        height: 459px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .tk_service_content{
+            background-color: rgba(4, 29, 4, 0.44);
+            padding: 36px;
+            @include flex(column, flex-end, center);
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            position: relative;
+            .tk_service_icon{
+                position: absolute;
+                top: 80px;
+                left: 50%;
+                @include transformX(-50%);
+                span{
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    width: 44px;
+                    height: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    background-color: $primary;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    color: $white;
+                    @include border-radius(50%)
+                }
+            }
+            .tk_service_title{
+                h4{
+                    a{
+                        font-weight: 500;
+                        font-size: 32px;
+                        line-height: 44px;
+                        text-align: center;
+                        color: $white;
+                        @include transition(0.4s);
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*---Service Card End---*/
+
+
+.tk_feature_listing_area{
+    margin-top: 120px;
+    .tk_listing_item{
+        @include border-radius(32px);
+        border: 1px solid transparent;
+        padding: 28px;
+        background-color: $white;
+        box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+        transition: all 0.3s;
+        @include xxs{
+            padding: 15px;
+        }
+        .tk_listing_item_content{
+            padding-top: 3px;
+            // @include sm{
+            //     padding: 15px;
+            // }
+            // @include xxs{
+            //     padding: 0px;
+            // }
+            .tk_title_stars{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                h4{
+                    a{
+                        font-weight: 600;
+                    font-size: 24px;
+                    line-height: 34px;
+                    color: black;
+                    transition: all 0.3s;
+    
+                    @include xl{
+                        font-size: 24px;
+                    }
+    
+                    &:hover{
+                        color: $primary;
+                    }
+                    }
+                }
+    
+                .stars{
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    i{
+                        color: #ffb124;
+                    }
+                }
+    
+            }
+    
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                color: $gray8;
+                margin-top: 10px;
+                @include nesthub{
+                    font-size: 14px;
+                }
+            }
+    
+            .location,
+            .clock{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 12px;
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $gray8;
+                    margin-top: 0;
+                    font-size: 14px;
+                    @include nesthubmax{
+                        font-size: 13px;
+                    }
+                    line-height: 20px;
+                }
+            }
+            .location{
+                margin-top: 15px;
+            }
+    
+            .read-more{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 25px;
+                .primary-btn{
+                    background: #f2fbf1;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $gray9;
+                    padding: 14px 47px;
+                    border: 1px solid $primary;
+                    @include border-radius(50px);
+                    @include transition(0.4s);
+                    &:hover{
+                        background-color: $primary;
+                        color: $white;
+                    }
+    
+    
+                }
+                .contact-list{
+                    display: flex;
+                    gap: 10px;
+                    a{
+                        i{
+                            margin-left: 0;
+                        }
+    
+                        height: 56px;
+                        width: 56px;
+                        border-radius: 50%;
+                        background: #faf1ff;
+                        font-size: 18px;
+                        color: #8300e6;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s;
+                        position: relative;
+                        @include nesthub{
+                            width: 30px;
+                            height: 30px;
+                            font-size: 14px;
+                        }
+                        bottom: 0;
+    
+                        &:hover{
+                            background-color: $primary;
+                            color: white;
+                            bottom: 5px;
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+        figure{
+            position: relative;
+            overflow: hidden;
+            @include border-radius(16px);
+    
+            img{
+                width: 100%;
+                transition: all 0.3s;
+            }
+        }
+        .tk_service_tag{
+            position: absolute;
+            top: 20px;
+            left: -150px;
+            background-color: $white;
+            border-radius: 20px;
+            padding: 5px 20px;
+            transition: all 0.5s;
+    
+            h4{
+                line-height: 28px;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #8300e6;
+            }
+        }
+        .popular-tag{
+            position: absolute;
+            top: 20px;
+            right: -10px;
+            background-color: $primary;
+            border-radius: 20px;
+            padding: 5px 25px;
+            transition: all 0.5s;
+    
+            h4{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 21px;
+                color: $white;
+            }
+        }
+    
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: absolute;
+            bottom: 24px;
+            left: 16px;
+    
+            @include xs{
+                bottom: 15px;
+                left: 15px;
+            }
+            img{
+                border-radius: 50%;
+                object-fit: cover;
+                height: 44px;
+                width: 44px;
+            }
+            h4{
+                line-height: 28px;
+                color: $white;
+                font-weight: 500;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+        }
+    
+        &:hover{
+            border-color: $primary;
+            background-color: $gray1;
+    
+            figure{
+                img{
+                    transform: scale(1.05);
+                }
+            }
+    
+            .tk_service_tag{
+                left: 16px;
+            }
+        }
+    }
+    .tk_btn_wrapper{
+        margin-top: 40px;
+    }
+}
+
+.tk_why_use_holistic_area{
+    border-radius: 24px;
+    padding: 120px 0px;
+    background: #3b0067;
+    margin-top: 120px;
+    .tk_why_use_card{
+        border-radius: 24px;
+        padding: 32px;
+        width: 100%;
+        background: #f8f6f9;
+        .card_icon{
+            border: 1px solid #dedede;
+            border-radius: 28px;
+            width: 116px;
+            height: 116px;
+            line-height: 116px;
+            text-align: center;
+            box-shadow: 12px 12px 36px 0 rgba(17, 17, 17, 0.08);
+            background: $white;
+        }
+        .card_title{
+            margin-top: 60px;
+            h4{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                color: $gray9;
+            }
+        }
+        .card_description{
+            margin-top: 12px;
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                color: $gray8;
+            }
+        }
+    }
+    .tk_why_use_img{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        @include border-radius(24px);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include border-radius(24px);
+            @include transition(0.4s);
+            &:hover{
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+}
+        }
+    }
+    .tk_heading_area{
+        margin-bottom: 40px;
+    }
+}
+
+.tk_blog_news_area{
+    margin-top: 120px;
+    background: #f8f6f9;
+    padding: 120px 0px;
+    .tk_heading_area{
+        margin-bottom: 40px;
+    }
+    .tk_btn_wrapper{
+        margin-top: 40px;
+    }
+    .tk_blog_news_card{
+        border: 1px solid #dedede;
+        border-radius: 20px;
+        padding: 24px 24px 28px;
+        width: 100%;
+        background-color: $white;
+        height: 100%;
+        .tk_blog_img{
+            border-radius: 16px;
+            width: 100%;
+            height: 348px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+                @include transition(0.4s);
+                &:hover{
+                    transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+}
+
+            }
+        }
+        .tk_blog_user_meta{
+            @include flex(row, flex-start, center);
+            gap: 24px;
+            margin-top: 28px;
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                color: $gray8;
+                span{
+                    margin-right: 10px;
+                }
+            }
+        }
+        h4{
+            margin-top: 16px;
+            a{
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 40px;
+                color: $gray9;
+                @include transition(0.4s);
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .tk_blog_description{
+            margin-top: 12px;
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                color: $gray8;
+            }
+        }
+    }
+}
+
+.tk_resources_education_area{
+    .tk_heading_area{
+        margin-bottom: 40px;
+    }
+    padding: 120px 0px;
+    background-color: $white;
+    .tk_resources_card{
+        border-radius: 32px;
+        padding: 39px;
+        width: 100%;
+        height: 100%;
+        background: #f8f6f9;
+        .tk_icon{
+            border: 1px solid #dedede;
+            border-radius: 28px;
+            line-height: 120px;
+            width: 120px;
+            height: 120px;
+            box-shadow: 12px 12px 36px 0 rgba(17, 17, 17, 0.08);
+            background: $white;
+            text-align: center;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: -0.01em;
+            text-transform: capitalize;
+            color: $gray9;
+            margin-top: 24px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 84px;
+            color: $gray8;
+        }
+        .tk_resources_btn{
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: $gray9;
+                @include transition(0.4s);
+                margin-top: 16px;
+                &:hover{
+                    color: $primary;
+
+                }
+            }
+        }
+    }
+}
+
+.tk_footer_area{
+    border-radius: 24px;
+    padding: 120px 0px 0px 0px;
+    background: #3b0067;
+    .tk_stay_update_area{
+        .container_update{
+            max-width: 1360px;
+            margin: auto;
+            width: 100%;
+            @include border-radius(24px);
+            padding: 120px;
+            box-shadow: 8px -8px 32px 0 rgba(17, 17, 17, 0.08);
+            background: #f8f6f9;
+        }
+    }
+    .tk_footer_update_content{
+        padding-left: 5px;
+    }
+    .tk_footer_image{
+        border-radius: 16px;
+        width: 100%;
+        height: 400px;
+        padding-right: 8px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+    .tk_subscribe_form{
+        border-radius: 20px;
+        padding: 32px;
+        width: 100%;
+        background-color: $white;
+        margin-top: 36px;
+        form{
+            @include flex(column, center, center);
+            gap: 16px;
+        }
+        input{
+            border: 1px solid #dedede;
+            border-radius: 50px;
+            padding: 14px 20px;
+            width: 100%;
+            height: 56px;
+            background: #f8f8f8;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            color: $gray9;
+            &::placeholder{
+                color: $gray8;
+
+            }
+        }
+        button{
+            border: none;
+            border-radius: 50px;
+            padding: 15px 28px;
+            width: 100%;
+            height: 56px;
+            background: #8300e6;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white;
+        }
+    }
+}

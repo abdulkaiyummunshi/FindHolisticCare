@@ -1,0 +1,75 @@
+.tk_heading_area{
+    .tk_heading{
+        h1{
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 104px;
+            line-height: 108px;
+            letter-spacing: -0.04em;
+            text-align: center;
+            color: $white;
+            @include nesthubmax{
+                font-size: 90px;
+                line-height: 90px;
+            }
+            @include nesthub{
+                font-size: 80px;
+                line-height: 80px;
+            }
+            @include nesthub{
+                font-size: 70px;
+                line-height: 70px;
+            }
+            @include sm{
+                font-size: 60px;
+                line-height: 60px;
+
+            }
+
+        }
+        h2{
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 68px;
+            letter-spacing: -0.01em;
+            color: $gray9;
+        }
+        &.style_1{
+            h2{
+                color: $white;
+            }
+        }
+    }
+    .tk_sub_heading{
+        h4{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #6155f5;
+        }
+        &.style_1{
+            h4{
+                color: $primary;
+            }
+        }
+    }
+    .tk_description{
+        margin-top: 20px;
+        p{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            // text-align: center;
+            color: $white;
+        }
+        &.style_1{
+            p{
+                color: $gray8;
+                font-size: 18px;
+            }
+        }
+    }
+
+    
+}

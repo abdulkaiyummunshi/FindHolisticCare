@@ -1,0 +1,51 @@
+.tk_btn_wrapper{
+    a{
+        width: fit-content;
+        padding: 11px 24px;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        @include border-radius(50px);
+        background-color: $primary;
+        color: $white;
+        @include flex(row, center, center);
+        gap: 9px;
+        border: 1px solid transparent;
+        @include transition(0.4s);
+        span{
+            font-size: 20px;
+        }
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+    
+}
+.tk_primary_btn{
+        width: fit-content;
+        padding: 11px 24px;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        @include border-radius(50px);
+        background-color: $primary;
+        color: $white;
+        @include flex(row, center, center);
+        gap: 9px;
+        border: 1px solid transparent;
+        @include transition(0.4s);
+        span{
+            font-size: 20px;
+        }
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    
+    
+}
