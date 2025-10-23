@@ -5,6 +5,9 @@
 .header-wrap{
 	border-radius: 444px;
 	padding: 0px 16px;
+	@include sm{
+		@include border-radius(20px)
+	}
     display: flex;
     align-items: center;
     justify-content: space-between;

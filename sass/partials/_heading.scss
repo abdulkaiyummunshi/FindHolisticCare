@@ -21,8 +21,8 @@
                 line-height: 70px;
             }
             @include sm{
-                font-size: 60px;
-                line-height: 60px;
+                font-size: 48px;
+                line-height: 48px;
 
             }
 
@@ -33,6 +33,10 @@
             line-height: 68px;
             letter-spacing: -0.01em;
             color: $gray9;
+            @include sm{
+                font-size: 35px;
+                line-height: 46px;
+            }
         }
         &.style_1{
             h2{
@@ -56,12 +60,19 @@
     }
     .tk_description{
         margin-top: 20px;
+        @include sm{
+            margin-top: 12px;
+        }
         p{
             font-weight: 400;
             font-size: 22px;
             line-height: 28px;
             // text-align: center;
             color: $white;
+            @include sm{
+                font-size: 16px;
+                line-height: 25px;
+            }
         }
         &.style_1{
             p{

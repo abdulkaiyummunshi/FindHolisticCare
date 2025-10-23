@@ -7,6 +7,9 @@
     background-size: cover;
     @include flex(row, center, center);
     position: relative;
+    @include sm{
+        height: 700px;
+    }
     .overly{
         position: absolute;
         top: 0px;
@@ -25,6 +28,7 @@
         @include flex(row, center, center);
         gap: 16px;
         margin-top: 28px;
+        flex-wrap: wrap;
     }
     .tk_search_box{
         font-weight: 400;
@@ -86,6 +90,10 @@
     @include nesthub{
      padding: 30px 82px 30px 40px;
     }
+    @include sm{
+        bottom: -209px;
+        @include border-radius(10px);
+    }
     display: grid;
     align-items: center;
     gap: 10px;
@@ -104,7 +112,11 @@
   @include xxs{
     grid-template-columns: repeat(1, 1fr);
   }
-
+.tk_primary_btn{
+    @include sm{
+        width: 100% !important;
+    }
+}
   p{
     text-align: left;
     border: 1px solid #dedede;
@@ -157,6 +169,19 @@
 /*---Service Card Start---*/
 .tk_service_card_area{
     margin-top: 120px;
+    @include nesthubmax{
+        margin-top: 100px;
+    }
+    @include nesthub{
+        margin-top: 80px;
+    }
+    @include md{
+        margin-top: 80px;
+    }
+    @include sm{
+        margin-top: 284px;
+    }
+    
     .tk_service_card{
         border-radius: 12px;
         width: 100%;
@@ -216,6 +241,18 @@
 
 .tk_feature_listing_area{
     margin-top: 120px;
+    @include nesthubmax{
+        margin-top: 100px;
+    }
+    @include nesthub{
+        margin-top: 80px;
+    }
+    @include md{
+        margin-top: 80px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
     .tk_listing_item{
         @include border-radius(32px);
         border: 1px solid transparent;
@@ -454,8 +491,32 @@
 .tk_why_use_holistic_area{
     border-radius: 24px;
     padding: 120px 0px;
+    @include nesthubmax{
+        padding: 100px 0px;
+    }
+    @include nesthub{
+        padding: 80px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 75px 0px;
+    }
     background: #3b0067;
     margin-top: 120px;
+    @include nesthubmax{
+        margin-top: 100px;
+    }
+    @include nesthub{
+        margin-top: 80px;
+    }
+    @include md{
+        margin-top: 80px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
     .tk_why_use_card{
         border-radius: 24px;
         padding: 32px;
@@ -517,8 +578,32 @@
 
 .tk_blog_news_area{
     margin-top: 120px;
+    @include nesthubmax{
+        margin-top: 100px;
+    }
+    @include nesthub{
+        margin-top: 80px;
+    }
+    @include md{
+        margin-top: 80px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
     background: #f8f6f9;
     padding: 120px 0px;
+    @include nesthubmax{
+        padding: 100px 0px;
+    }
+    @include nesthub{
+        padding: 80px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 75px 0px;
+    }
     .tk_heading_area{
         margin-bottom: 40px;
     }
@@ -573,6 +658,10 @@
                 font-weight: 500;
                 font-size: 28px;
                 line-height: 40px;
+                @include sm{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
                 color: $gray9;
                 @include transition(0.4s);
                 &:hover{
@@ -597,6 +686,18 @@
         margin-bottom: 40px;
     }
     padding: 120px 0px;
+    @include nesthubmax{
+        padding: 100px 0px;
+    }
+    @include nesthub{
+        padding: 80px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 75px 0px;
+    }
     background-color: $white;
     .tk_resources_card{
         border-radius: 32px;
