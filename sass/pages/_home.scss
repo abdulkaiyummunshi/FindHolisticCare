@@ -3,10 +3,21 @@
     height: 891px;
     background-repeat: no-repeat;
     background-position: center;
-    @include border-radius(24px);
+    @include border-radius(0px 0px 24px 24px);
     background-size: cover;
     @include flex(row, center, center);
     position: relative;
+    .tk_heading_area{
+        .tk_description{
+            p{
+                line-height: 36px;
+            }
+        }
+    }
+    &.style_1{
+        height: 648px;
+         background-image: url(../images/about_page/banner/banner_bg.png);
+    }
     @include sm{
         height: 700px;
     }
@@ -17,12 +28,39 @@
         width: 100%;
         height: 100%;
         background-color: rgba(4, 29, 4, 0.75);
-        @include border-radius(24px);
+        @include border-radius(0px 0px 24px 24px);
         
     }
     .tk_heading_area{
        position: static;
        z-index: 1;
+    }
+    .tk_sub_menu{
+        margin-bottom: 24px;
+        margin-top: 60px;
+        ul{
+            @include flex(row, center, center);
+            gap: 6px;
+            li{
+                a{
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 36px;
+                    text-align: center;
+                    color: #d9d9d9;
+                    &:hover{
+                        color: $white;
+                    }
+                    
+                }
+                &:nth-child(2){
+                    a{
+                        color: $white;
+
+                    }
+                    }
+            }
+        }
     }
     .tk_btn_area{
         @include flex(row, center, center);
@@ -168,7 +206,7 @@
 
 /*---Service Card Start---*/
 .tk_service_card_area{
-    margin-top: 120px;
+    margin-top: 170px;
     @include nesthubmax{
         margin-top: 100px;
     }
@@ -220,11 +258,12 @@
             }
             .tk_service_title{
                 h4{
+                    text-align: center;
                     a{
                         font-weight: 500;
                         font-size: 32px;
                         line-height: 44px;
-                        text-align: center;
+                        text-align: center !important;
                         color: $white;
                         @include transition(0.4s);
                         &:hover{
@@ -240,7 +279,10 @@
 
 
 .tk_feature_listing_area{
-    margin-top: 120px;
+    margin-top: 106px;
+    .tk_heading_area{
+        margin-bottom: 40px;
+    }
     @include nesthubmax{
         margin-top: 100px;
     }
@@ -254,7 +296,7 @@
         margin-top: 75px;
     }
     .tk_listing_item{
-        @include border-radius(32px);
+        @include border-radius(20px);
         border: 1px solid transparent;
         padding: 28px;
         background-color: $white;
@@ -387,7 +429,7 @@
                         bottom: 0;
     
                         &:hover{
-                            background-color: $primary;
+                            background-color:  #8300e6;
                             color: white;
                             bottom: 5px;
                         }
@@ -577,19 +619,6 @@
 }
 
 .tk_blog_news_area{
-    margin-top: 120px;
-    @include nesthubmax{
-        margin-top: 100px;
-    }
-    @include nesthub{
-        margin-top: 80px;
-    }
-    @include md{
-        margin-top: 80px;
-    }
-    @include sm{
-        margin-top: 75px;
-    }
     background: #f8f6f9;
     padding: 120px 0px;
     @include nesthubmax{
@@ -751,8 +780,24 @@
 }
 
 .tk_footer_area{
-    border-radius: 24px;
+    @include border-radius(24px 24px 0px 0px);
     padding: 120px 0px 0px 0px;
+    @include nesthubmax{
+        padding: 100px 0px 0px 0px;
+
+    }
+    @include nesthub{
+        padding: 90px 0px 0px 0px;
+
+    }
+    @include md{
+        padding: 85px 0px 0px 0px;
+
+    }
+    @include md{
+        padding: 75px 0px 0px 0px;
+
+    }
     background: #3b0067;
     .tk_stay_update_area{
         .container_update{
@@ -761,6 +806,15 @@
             width: 100%;
             @include border-radius(24px);
             padding: 120px;
+            @include nesthubmax{
+                padding: 60px;
+            }
+            @include nesthub{
+                padding: 40px;
+            }
+            @include md{
+                padding: 40px;
+            }
             box-shadow: 8px -8px 32px 0 rgba(17, 17, 17, 0.08);
             background: #f8f6f9;
         }
