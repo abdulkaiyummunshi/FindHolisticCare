@@ -8,14 +8,15 @@
             flex-wrap: wrap;
             margin-top: 120px;
             padding-bottom: 40px;
-            @include sm{
-                gap: 40px;
+            @include nesthub{
+                gap: 40px 0px;
             }
             @include md{
                 gap: 40px 0px;
+                margin-top: 40px;
             }
-            @include nesthub{
-                gap: 40px 0px;
+            @include sm{
+                gap: 40px;
             }
                         
             .iteam_content{
@@ -32,7 +33,13 @@
                     font-family: $font-family;
                     text-transform: lowercase;
                     color: $gray2;
-                    margin-top: 16px
+                    margin-top: 16px;
+                    br{
+                        @include sm{
+                            display: none
+                        }
+                    }
+                
                 }
             }
             
@@ -132,6 +139,9 @@
                             font-weight: 400;
                             font-size: 16px;
                             color: $white;
+                            @include sm{
+                                font-size: 14px;
+                            }
                             opacity: 0.8;
                             @include transition(0.4s);
                             &:hover{

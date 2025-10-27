@@ -19,6 +19,15 @@
 		  padding: 0;
 		  position: relative;
 		  margin-right: 80px;
+		  @include nesthubmax{
+			margin-right: 0px;
+		  }
+		  @include nesthub{
+			margin-right: 0px;
+		  }
+		  @include md{
+			margin-right: 0px;
+		  }
 		  li {
 			display: inline-block;
 			padding: 0;
@@ -240,7 +249,7 @@ header{
 			height: 80px;
 		}
 		@include sm{
-			height: 87px;
+			height: 80px;
 		}
 		
 		.logo{
@@ -256,12 +265,17 @@ header{
 					letter-spacing: -0.03em;
 					text-transform: capitalize;
 					color: $gray9;
+					@include sm{
+						font-size: 14px;
+						line-height: 18px;
+						gap: 8px;
+					}
 
 				}
 			}
-			@include breakpoint(max-sm){
-				width: 30%;
-			}
+			// @include breakpoint(max-sm){
+			// 	width: 30%;
+			// }
 			.sticky-logo{
 				display: none;
 			}

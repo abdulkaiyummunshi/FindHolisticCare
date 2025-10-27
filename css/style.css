@@ -20,6 +20,15 @@
     padding: 0;
     position: relative;
     margin-right: 80px; }
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      .header-wrap .main-menu ul {
+        margin-right: 0px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .header-wrap .main-menu ul {
+        margin-right: 0px; } }
+    @media only screen and (max-width: 991px) {
+      .header-wrap .main-menu ul {
+        margin-right: 0px; } }
     .header-wrap .main-menu ul li {
       display: inline-block;
       padding: 0;
@@ -161,7 +170,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .header-1 {
       height: 80px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .header-1 {
       height: 80px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -173,12 +182,12 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .header-1 .header-wrap {
         height: 80px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .header-1 .header-wrap {
         height: 80px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .header-1 .header-wrap {
-        height: 87px; } }
+        height: 80px; } }
     .header-1 .header-wrap .logo a span {
       display: flex;
       flex-direction: row;
@@ -193,9 +202,11 @@ header {
       letter-spacing: -0.03em;
       text-transform: capitalize;
       color: #111; }
-    @media (max-width: 575px) {
-      .header-1 .header-wrap .logo {
-        width: 30%; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .header-1 .header-wrap .logo a span {
+          font-size: 14px;
+          line-height: 18px;
+          gap: 8px; } }
     .header-1 .header-wrap .logo .sticky-logo {
       display: none; }
     .header-1 .header-wrap .header-right {
@@ -425,15 +436,16 @@ header {
     flex-wrap: wrap;
     margin-top: 120px;
     padding-bottom: 40px; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .tk_footer_area .footer_area_quick_menu {
-        gap: 40px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .tk_footer_area .footer_area_quick_menu {
-        gap: 40px 0px; } }
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_footer_area .footer_area_quick_menu {
         gap: 40px 0px; } }
+    @media only screen and (max-width: 991px) {
+      .tk_footer_area .footer_area_quick_menu {
+        gap: 40px 0px;
+        margin-top: 40px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .tk_footer_area .footer_area_quick_menu {
+        gap: 40px; } }
     .tk_footer_area .footer_area_quick_menu .iteam_content h3 {
       font-weight: 500;
       font-size: 32px;
@@ -447,6 +459,9 @@ header {
       text-transform: lowercase;
       color: #e4e4e4;
       margin-top: 16px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .tk_footer_area .footer_area_quick_menu .iteam_content p br {
+          display: none; } }
     .tk_footer_area .footer_area_quick_menu .quicklink {
       display: flex;
       flex-direction: column;
@@ -504,7 +519,7 @@ header {
         margin-top: -32px;
         justify-content: flex-start;
         gap: 10px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_footer_area .footer_last .footer_last_menu {
         gap: 20px; }
         .tk_footer_area .footer_last .footer_last_menu ul {
@@ -535,6 +550,9 @@ header {
           color: #fff;
           opacity: 0.8;
           transition: all 0.4s ease; }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .tk_footer_area .footer_last .footer_last_menu ul li a {
+              font-size: 14px; } }
           .tk_footer_area .footer_last .footer_last_menu ul li a:hover {
             color: #35b729;
             margin-bottom: 5px; }
@@ -686,7 +704,7 @@ header {
     @media only screen and (min-width: 1200px) and (max-width: 1399px) {
       .tk_hero_area .banner-search-container {
         grid-template-columns: 22% 18% 18% 18% auto; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_hero_area .banner-search-container {
         grid-template-columns: repeat(3, 1fr); } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -742,7 +760,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_service_card_area {
       margin-top: 80px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_service_card_area {
       margin-top: 80px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -816,7 +834,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_feature_listing_area {
       margin-top: 80px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_feature_listing_area {
       margin-top: 80px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1018,7 +1036,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_why_use_holistic_area {
       padding: 80px 0px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_why_use_holistic_area {
       padding: 80px 0px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1030,7 +1048,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_why_use_holistic_area {
       margin-top: 80px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_why_use_holistic_area {
       margin-top: 80px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1101,7 +1119,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_blog_news_area {
       padding: 80px 0px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_blog_news_area {
       padding: 80px 0px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1182,7 +1200,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_resources_education_area {
       padding: 80px 0px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_resources_education_area {
       padding: 80px 0px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1243,10 +1261,10 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_footer_area {
       padding: 90px 0px 0px 0px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_footer_area {
       padding: 85px 0px 0px 0px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_footer_area {
       padding: 75px 0px 0px 0px; } }
   .tk_footer_area .tk_stay_update_area .container_update {
@@ -1267,16 +1285,23 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_footer_area .tk_stay_update_area .container_update {
         padding: 40px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_footer_area .tk_stay_update_area .container_update {
-        padding: 40px; } }
+        padding: 30px; } }
   .tk_footer_area .tk_footer_update_content {
     padding-left: 5px; }
+    @media only screen and (max-width: 991px) {
+      .tk_footer_area .tk_footer_update_content {
+        padding-left: 0px;
+        margin-top: 20px; } }
   .tk_footer_area .tk_footer_image {
     border-radius: 16px;
     width: 100%;
     height: 400px;
     padding-right: 8px; }
+    @media only screen and (max-width: 991px) {
+      .tk_footer_area .tk_footer_image {
+        padding-right: 0px !important; } }
     .tk_footer_area .tk_footer_image img {
       width: 100%;
       height: 100%;
@@ -1327,7 +1352,7 @@ header {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .tk_abou_us_area {
       margin-top: 90px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .tk_abou_us_area {
       margin-top: 80px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1339,7 +1364,7 @@ header {
     padding: 68px 0px;
     width: 100%;
     background: #f8f6f9; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_abou_us_area .tk_heading_area {
         padding: 40px 30px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1351,7 +1376,7 @@ header {
       line-height: 28px;
       text-align: center;
       color: #646464; }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @media only screen and (max-width: 991px) {
         .tk_abou_us_area .tk_heading_area .tk_description p br {
           display: none; } }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1365,7 +1390,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_content_style_1 {
         padding-right: 10px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_content_style_1 {
         padding-right: 0px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1376,7 +1401,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_content_style_2 {
         padding-left: 10px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_content_style_2 {
         padding-left: 0px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1387,7 +1412,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_details.style_1 {
         margin-top: 20px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_details.style_1 {
         margin-top: 20px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1398,7 +1423,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_details .heading {
         margin-bottom: 20px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_details .heading {
         margin-bottom: 20px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1414,7 +1439,7 @@ header {
         .tk_linda_area .tk_linda_details .heading h2 {
           font-size: 48px;
           line-height: 58px; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @media only screen and (max-width: 991px) {
         .tk_linda_area .tk_linda_details .heading h2 {
           font-size: 48px;
           line-height: 58px; } }
@@ -1429,7 +1454,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_details .tk_description.style_1 {
         margin-top: 12px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_details .tk_description.style_1 {
         margin-top: 12px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1444,7 +1469,7 @@ header {
       .tk_linda_area .tk_linda_details .tk_description p {
         font-size: 16px;
         line-height: 22px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_details .tk_description p {
         font-size: 16px;
         line-height: 22px; } }
@@ -1461,7 +1486,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_details h4 {
         margin-top: 12px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_details h4 {
         margin-top: 12px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1472,7 +1497,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_details .tk_founder_meta {
         margin-top: 30px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_details .tk_founder_meta {
         margin-top: 30px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1490,7 +1515,7 @@ header {
         .tk_linda_area .tk_linda_details .tk_founder_meta h3 {
           font-size: 48px;
           line-height: 58px; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @media only screen and (max-width: 991px) {
         .tk_linda_area .tk_linda_details .tk_founder_meta h3 {
           font-size: 48px;
           line-height: 58px; } }
@@ -1508,7 +1533,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_details .tk_btn_wrapper {
         margin-top: 16px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_details .tk_btn_wrapper {
         margin-top: 16px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1520,7 +1545,7 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .tk_linda_area .tk_linda_image {
         height: 400px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_image {
         height: 400px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1531,13 +1556,13 @@ header {
       @media only screen and (min-width: 992px) and (max-width: 1024px) {
         .tk_linda_area .tk_linda_image.style_1 {
           margin-top: 20px; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @media only screen and (max-width: 991px) {
         .tk_linda_area .tk_linda_image.style_1 {
           margin-top: 20px; } }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .tk_linda_area .tk_linda_image.style_1 {
           margin-top: 20px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .tk_linda_area .tk_linda_image.style_2 {
         margin-top: 30px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
