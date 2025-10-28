@@ -423,6 +423,7 @@ header {
   100% {
     transform: translateX(50vw);
     transform: translateX(50vw); } }
+/*---Footer Start---*/
 .tk_footer_area {
   padding: 0px 20px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -559,6 +560,7 @@ header {
   .tk_footer_area .footer_last_area {
     background-color: #35b729; }
 
+/*---Footer End---*/
 .tk_hero_area {
   background-image: url(../images/home/hero/bg_img.png);
   height: 891px;
@@ -824,6 +826,7 @@ header {
             color: #35b729; }
 
 /*---Service Card End---*/
+/*---Feature Listing Start---*/
 .tk_feature_listing_area {
   margin-top: 106px; }
   .tk_feature_listing_area .tk_heading_area {
@@ -1025,6 +1028,8 @@ header {
   .tk_feature_listing_area .tk_btn_wrapper {
     margin-top: 40px; }
 
+/*---Feature Listing End---*/
+/*---Why Use Holistic Start---*/
 .tk_why_use_holistic_area {
   border-radius: 24px;
   padding: 120px 0px;
@@ -1110,6 +1115,8 @@ header {
   .tk_why_use_holistic_area .tk_heading_area {
     margin-bottom: 40px; }
 
+/*---Why Use Holistic End---*/
+/*---Blog News Start---*/
 .tk_blog_news_area {
   background: #f8f6f9;
   padding: 120px 0px; }
@@ -1189,6 +1196,8 @@ header {
         line-height: 28px;
         color: #646464; }
 
+/*---Blog News End---*/
+/*---Blog Resources Education Start---*/
 .tk_resources_education_area {
   padding: 120px 0px;
   background-color: #fff; }
@@ -1247,6 +1256,8 @@ header {
       .tk_resources_education_area .tk_resources_card .tk_resources_btn a:hover {
         color: #35b729; }
 
+/*---Blog Resources Education End---*/
+/*---Footer Start---*/
 .tk_footer_area {
   border-radius: 24px 24px 0px 0px;
   -moz-border-radius: 24px 24px 0px 0px;
@@ -1350,6 +1361,7 @@ header {
       line-height: 26px;
       color: #fff; }
 
+/*---Footer End---*/
 .tk_abou_us_area {
   margin-top: 120px; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -1390,7 +1402,20 @@ header {
           display: none; } }
 
 .tk_linda_area {
-  margin-top: 68px; }
+  margin-top: 68px;
+  margin-bottom: 120px; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .tk_linda_area {
+      margin-bottom: 100px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .tk_linda_area {
+      margin-bottom: 90px; } }
+  @media only screen and (max-width: 991px) {
+    .tk_linda_area {
+      margin-bottom: 85px; } }
+  @media only screen and (max-width: 991px) {
+    .tk_linda_area {
+      margin-bottom: 75px; } }
   .tk_linda_area .tk_linda_content_style_1 {
     padding-right: 22px; }
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -1583,6 +1608,160 @@ header {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+
+.tk_listings_area .sidebar_wrapper {
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  padding: 24px;
+  width: 100%;
+  background: #f8f6f9; }
+  .tk_listings_area .sidebar_wrapper h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #111; }
+  .tk_listings_area .sidebar_wrapper .tk_search_area {
+    position: relative;
+    margin-top: 20px; }
+    .tk_listings_area .sidebar_wrapper .tk_search_area input {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #111;
+      border: 1px solid #dedede;
+      border-radius: 50px;
+      padding: 10px 10px 10px 20px;
+      height: 56px;
+      outline: none;
+      line-height: 56px;
+      width: 100%; }
+      .tk_listings_area .sidebar_wrapper .tk_search_area input::placeholder {
+        color: #646464; }
+    .tk_listings_area .sidebar_wrapper .tk_search_area button {
+      border-radius: 50px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: #35b729;
+      color: #fff;
+      font-size: 15px;
+      border: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      right: 10px; }
+  .tk_listings_area .sidebar_wrapper .tk_category_area ul {
+    margin-top: 16px; }
+    .tk_listings_area .sidebar_wrapper .tk_category_area ul li {
+      width: 100%;
+      margin-bottom: 12px; }
+      .tk_listings_area .sidebar_wrapper .tk_category_area ul li a {
+        border: 1px solid #dedede;
+        border-radius: 50px;
+        padding: 12px 12px 12px 20px;
+        width: 100%;
+        height: 48px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #646464;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.4s ease; }
+        .tk_listings_area .sidebar_wrapper .tk_category_area ul li a:hover {
+          background-color: #35b729;
+          color: #fff; }
+  .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type {
+    margin-top: 16px; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type input {
+      border: 1px solid #dedede;
+      border-radius: 50px;
+      padding: 16px 20px;
+      width: 100%;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #111;
+      outline: none;
+      background-color: #fff; }
+      .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type input::placeholder {
+        color: #646464; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type .tk_select {
+      height: 100px; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type .selected {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #646464 !important; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type .nice-select {
+      display: block;
+      margin-top: 20px;
+      height: 56px;
+      width: 100%;
+      border: 1px solid #dedede;
+      border-radius: 50px; }
+      .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type .nice-select .list {
+        width: 100%; }
+      .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_advanced_type .nice-select::after {
+        width: 8px;
+        height: 8px;
+        right: 30px; }
+  .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key h5 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #111; }
+  .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key .tk_custom_radio {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key .tk_custom_radio input[type="radio"] {
+      display: none; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key .tk_custom_radio label {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 16px;
+      color: #646464; }
+      .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key .tk_custom_radio label .radio-mark {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        border: 1px solid #dedede;
+        margin-right: 8px;
+        position: relative; }
+        .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key .tk_custom_radio label .radio-mark::after {
+          content: '\f00c';
+          font-family: FontAwesome;
+          color: white;
+          font-size: 14px;
+          position: absolute;
+          font-weight: 900;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          display: none; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key .tk_custom_radio input[type="radio"]:checked + .radio-mark {
+      background-color: #35b729; }
+    .tk_listings_area .sidebar_wrapper .tk_advanced_area .tk_special_search_key .tk_custom_radio input[type="radio"]:checked + .radio-mark::after {
+      display: block; }
 
 .tk_heading_area .tk_heading h1 {
   font-family: "Poppins", sans-serif;

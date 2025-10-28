@@ -278,6 +278,9 @@
 /*---Service Card End---*/
 
 
+
+/*---Feature Listing Start---*/
+
 .tk_feature_listing_area{
     margin-top: 106px;
     .tk_heading_area{
@@ -529,7 +532,9 @@
         margin-top: 40px;
     }
 }
+/*---Feature Listing End---*/
 
+/*---Why Use Holistic Start---*/
 .tk_why_use_holistic_area{
     border-radius: 24px;
     padding: 120px 0px;
@@ -617,7 +622,9 @@
         margin-bottom: 40px;
     }
 }
+/*---Why Use Holistic End---*/
 
+/*---Blog News Start---*/
 .tk_blog_news_area{
     background: #f8f6f9;
     padding: 120px 0px;
@@ -709,7 +716,8 @@
         }
     }
 }
-
+/*---Blog News End---*/
+/*---Blog Resources Education Start---*/
 .tk_resources_education_area{
     .tk_heading_area{
         margin-bottom: 40px;
@@ -778,7 +786,9 @@
         }
     }
 }
+/*---Blog Resources Education End---*/
 
+/*---Footer Start---*/
 .tk_footer_area{
     @include border-radius(24px 24px 0px 0px);
     padding: 120px 0px 0px 0px;
@@ -888,3 +898,4 @@
         }
     }
 }
+/*---Footer End---*/

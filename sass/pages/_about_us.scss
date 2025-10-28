@@ -51,6 +51,19 @@
 
 .tk_linda_area{
     margin-top: 68px;
+    margin-bottom: 120px;
+    @include nesthubmax{
+        margin-bottom: 100px;
+    }
+    @include nesthub{
+        margin-bottom: 90px;
+    }
+    @include md{
+        margin-bottom: 85px;
+    }
+    @include md{
+        margin-bottom: 75px;
+    }
     .tk_linda_content_style_1{
         padding-right: 22px;
         @include nesthub{

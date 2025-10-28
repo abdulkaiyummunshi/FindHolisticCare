@@ -1,0 +1,177 @@
+.tk_listings_area{
+    .sidebar_wrapper{
+        border: 1px solid #dedede;
+        border-radius: 20px;
+        padding: 24px;
+        width: 100%;
+        background: #f8f6f9;
+        h3{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: $gray9;
+        }
+        .tk_search_area{
+            position: relative;
+            margin-top: 20px;
+            input{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                color: $gray9;
+                border: 1px solid #dedede;
+                border-radius: 50px;
+                padding: 10px 10px 10px 20px;
+                height: 56px;
+                outline: none;
+                line-height: 56px;
+                width: 100%;
+                
+                &::placeholder{
+                    color: $gray8;
+                }
+            }
+            button{
+                border-radius: 50px;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                background-color: $primary;
+                color: $white;
+                font-size: 15px;
+                border: none;
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                right: 10px;
+            }
+        }
+        .tk_category_area{
+            ul{
+                margin-top: 16px;
+                li{
+                    width: 100%;
+                    margin-bottom: 12px;
+                    a{
+                        border: 1px solid #dedede;
+                        border-radius: 50px;
+                        padding: 12px 12px 12px 20px;
+                        width: 100%;
+                        height: 48px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $gray8;
+                        @include flex(row, space-between, center);
+                        @include transition(0.4s);
+                        &:hover{
+                            background-color: $primary;
+                            color: $white;
+
+                        }
+
+                    }
+                }
+            }
+        }
+        .tk_advanced_area{
+            .tk_advanced_type{
+                margin-top: 16px;
+                input{
+                    border: 1px solid #dedede;
+                    border-radius: 50px;
+                    padding: 16px 20px;
+                    width: 100%;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $gray9;
+                    outline: none;
+                    background-color: $white;
+                    &::placeholder{
+                        color: $gray8;
+                    }
+                }
+                .tk_select{
+                    height: 100px;
+                }
+                .selected{
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $gray8 !important;
+                    }
+                .nice-select{
+                    display: block;
+                    margin-top: 20px;
+                    height: 56px;
+                    width: 100%;
+                    border: 1px solid #dedede;
+                    border-radius: 50px;
+                    .list{
+                        width: 100%;
+                    }
+                    
+                    &::after{
+                        width: 8px;
+                        height: 8px;
+                        right: 30px;
+                    }
+
+                }
+            }
+            .tk_special_search_key{
+                h5{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $gray9;
+                }
+                 .tk_custom_radio{
+                    margin-top: 12px;
+                @include flex(column, flex-start, flex-start);
+                gap: 12px;
+                input[type="radio"] {
+                    display: none;
+                  }
+               label{
+                @include flex(row, center, center);
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 16px;
+                color: $gray8;
+                .radio-mark {
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 50%;
+                    border: 1px solid #dedede;
+                    margin-right: 8px;
+                    position: relative;
+                    &::after {
+                        content: '\f00c';
+                        font-family: FontAwesome;
+                        color: white;
+                        font-size: 14px;
+                        position: absolute;
+                        font-weight: 900;
+                        top: 50%;
+                        left: 50%;
+                        @include transform(-50%, -50%);
+                        display: none;
+                      }
+                  }
+                
+               }
+               input[type="radio"]:checked + .radio-mark {
+                background-color: $primary;
+              }
+              
+              input[type="radio"]:checked + .radio-mark::after {
+                display: block;
+              }
+              }
+            }
+        }
+    }
+}
