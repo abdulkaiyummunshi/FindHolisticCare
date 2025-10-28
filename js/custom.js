@@ -34,9 +34,9 @@
         windowOn.on('scroll', function () {
             var scroll = windowOn.scrollTop();
             if (scroll < 300) {
-                $("#header-sticky").removeClass("sticky_top");
+                $("#tk_header_sticky").removeClass("tk_sticky_top");
             } else {
-                $("#header-sticky").addClass("sticky_top");
+                $("#tk_header_sticky").addClass("tk_sticky_top");
             }
         });
 

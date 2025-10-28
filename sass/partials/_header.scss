@@ -2,7 +2,7 @@
 /*------------------------------------
 		3.1 Header Style 1
 ----------------------------------*/
-.header-wrap{
+.tk_header_wrap{
 	border-radius: 444px;
 	padding: 0px 16px;
 	@include sm{
@@ -224,7 +224,7 @@ header{
 
 }
 
-.header-1{
+.tk_header_1{
 	width: 100%;
 	z-index: 999;
 	height: 80px;
@@ -240,7 +240,7 @@ header{
 		padding: 0px 5px;
 		height: 87px;
 	}
-	.header-wrap{
+	.tk_header_wrap{
 		height: 80px;
 		@include nesthub{
 			height: 80px;
@@ -276,11 +276,11 @@ header{
 			// @include breakpoint(max-sm){
 			// 	width: 30%;
 			// }
-			.sticky-logo{
+			.tk_sticky_logo{
 				display: none;
 			}
 		}
-		.header-right{
+		.tk_header_right{
 			@include flexbox();
 			align-items: center;
 			gap: 20px;
@@ -307,7 +307,7 @@ header{
 }
 
 //>>>>> Sticky Start <<<<</
-.sticky_top {
+.tk_sticky_top {
 	        width: 100%;
             position: fixed;
             top: 0px;
@@ -319,10 +319,10 @@ header{
             // animation: slideDown 2s ease forwards;
 			 transition: top 0.5s ease-in-out;
 			 .logo{
-				.primary-logo{
+				.tk_primary_logo{
 					display: none !important;
 				}
-				.sticky-logo{
+				.tk_sticky_logo{
 					display: block !important;
 				}
 				a{
